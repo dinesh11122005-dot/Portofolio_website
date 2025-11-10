@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Developer Portfolio</title>
+    <style>
+        body { font-family: sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #333; }
+        header { background-color: #333; color: white; padding: 20px; text-align: center; }
+        nav { background-color: #555; padding: 10px 0; text-align: center; }
+        nav button { background: none; border: none; color: white; padding: 10px 20px; margin: 0 5px; cursor: pointer; font-size: 16px; transition: background-color 0.3s; }
+        nav button:hover { background-color: #777; }
+        .content-section { padding: 40px 20px; max-width: 800px; margin: 20px auto; background-color: white; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        .hidden { display: none; }
+        h2 { border-bottom: 2px solid #ccc; padding-bottom: 10px; }
+        .project { margin-bottom: 20px; padding: 15px; border: 1px solid #eee; border-radius: 4px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>[Your Name]</h1>
+        <p>Frontend Developer | HTML & JavaScript Enthusiast</p>
+    </header>
+
+    <nav>
+        <button onclick="showSection('about')">About Me</button>
+        <button onclick="showSection('projects')">Projects</button>
+        <button onclick="showSection('contact')">Contact</button>
+    </nav>
+
+    <main>
+        <section id="about" class="content-section">
+            <h2>👋 About Me</h2>
+            <p>Hello! I am a passionate developer focusing on static web technologies. I love building clean, functional, and efficient websites.</p>
+            <p>This entire site runs on just HTML and JavaScript!</p>
+        </section>
+
+        <section id="projects" class="content-section hidden">
+            <h2>🚀 Projects</h2>
+            <div class="project">
+                <h3>Project One: Interactive Clock</h3>
+                <p>A simple digital clock implemented purely with JavaScript's `Date` object and DOM manipulation.</p>
+            </div>
+            <div class="project">
+                <h3>Project Two: Simple Calculator</h3>
+                <p>A basic four-function calculator showcasing form handling and mathematical logic in JavaScript.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="content-section hidden">
+            <h2>✉️ Contact</h2>
+            <p>You can reach me via:</p>
+            <ul>
+                <li>**Email:** <a href="mailto:your.email@example.com">your.email@example.com</a></li>
+                <li>**GitHub:** <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
